@@ -1,5 +1,5 @@
-# NPL-Auction-System-
-NPL Auction System 🏏
+# NPL-Auction-System🏏-
+- 
 Overview
 The NPL Auction System is a Machine Learning project that analyzes Nepal Premier League player statistics and predicts player auction prices.
 Purpose
