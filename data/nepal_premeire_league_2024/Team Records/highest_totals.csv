@@ -1,0 +1,65 @@
+team,score,overs,run_rate,number_of_team_innings,opposition,ground,result,match_date
+Biratnagar,193/8,19.5,9.73,2,v Lumbini,Kirtipur,won,4 Dec 2024
+Lumbini,191/7,20.0,9.55,1,v Biratnagar,Kirtipur,lost,4 Dec 2024
+S Paschim,187/4,20.0,9.35,1,v Lumbini,Kirtipur,won,7 Dec 2024
+Janakpur,185/5,19.2,9.56,2,v S Paschim,Kirtipur,won,21 Dec 2024
+S Paschim,184/9,20.0,9.20,1,v Janakpur,Kirtipur,lost,21 Dec 2024
+S Paschim,182/7,20.0,9.10,1,v Biratnagar,Kirtipur,won,3 Dec 2024
+Biratnagar,181/5,20.0,9.05,1,v Chitwan,Kirtipur,won,13 Dec 2024
+Chitwan,180/5,20.0,9.00,1,v Janakpur,Kirtipur,won,14 Dec 2024
+Pokhara,176/0,16.5,10.45,2,v Lumbini,Kirtipur,won,6 Dec 2024
+Karnali,175/6,20.0,8.75,1,v Chitwan,Kirtipur,won,18 Dec 2024
+Lumbini,170/5,20.0,8.50,1,v Pokhara,Kirtipur,lost,6 Dec 2024
+S Paschim,167/6,20.0,8.35,1,v Kathmandu,Kirtipur,won,5 Dec 2024
+Lumbini,167/6,20.0,8.35,1,v Chitwan,Kirtipur,won,10 Dec 2024
+Chitwan,164/5,20.0,8.20,1,v S Paschim,Kirtipur,won,8 Dec 2024
+Chitwan,161/7,20.0,8.05,1,v Pokhara,Kirtipur,won,3 Dec 2024
+Chitwan,154/9,20.0,7.70,2,v Karnali,Kirtipur,lost,18 Dec 2024
+Kathmandu,153/7,19.3,7.84,2,v Karnali,Kirtipur,won,4 Dec 2024
+S Paschim,153/7,20.0,7.65,1,v Pokhara,Kirtipur,won,15 Dec 2024
+Karnali,149/5,20.0,7.45,1,v Kathmandu,Kirtipur,lost,4 Dec 2024
+Janakpur,148,18.0,8.22,2,v Chitwan,Kirtipur,lost,14 Dec 2024
+Pokhara,148,19.4,7.52,2,v S Paschim,Kirtipur,lost,15 Dec 2024
+Janakpur,143/3,17.1,8.33,2,v Pokhara,Kirtipur,won,5 Dec 2024
+Kathmandu,142/4,14.1,10.02,2,v Pokhara,Kirtipur,won,14 Dec 2024
+Janakpur,142/2,15.1,9.36,2,v Karnali,Kirtipur,won,2 Dec 2024
+Lumbini,142/9,20.0,7.10,2,v S Paschim,Kirtipur,lost,7 Dec 2024
+S Paschim,141/2,18.3,7.62,2,v Janakpur,Kirtipur,won,18 Dec 2024
+Karnali,141/7,20.0,7.05,1,v Janakpur,Kirtipur,lost,2 Dec 2024
+Biratnagar,139/7,20.0,6.95,1,v Pokhara,Kirtipur,tied,12 Dec 2024
+Pokhara,139/6,20.0,6.95,2,v Biratnagar,Kirtipur,tied,12 Dec 2024
+Janakpur,139/9,20.0,6.95,1,v S Paschim,Kirtipur,lost,18 Dec 2024
+Pokhara,138/7,20.0,6.90,1,v Janakpur,Kirtipur,lost,5 Dec 2024
+Pokhara,138/8,20.0,6.90,1,v Kathmandu,Kirtipur,lost,14 Dec 2024
+Janakpur,136/9,20.0,6.80,1,v Lumbini,Kirtipur,won,8 Dec 2024
+Lumbini,135/8,20.0,6.75,2,v Janakpur,Kirtipur,lost,8 Dec 2024
+Chitwan,134/8,20.0,6.70,2,v Lumbini,Kirtipur,lost,10 Dec 2024
+Karnali,133,20.0,6.65,1,v Biratnagar,Kirtipur,won,7 Dec 2024
+Karnali,132/4,19.5,6.65,2,v Chitwan,Kirtipur,won,6 Dec 2024
+Janakpur,131/2,15.3,8.45,2,v Biratnagar,Kirtipur,won,30 Nov 2024
+S Paschim,131,18.2,7.14,2,v Chitwan,Kirtipur,lost,8 Dec 2024
+Chitwan,130/7,20.0,6.50,1,v Karnali,Kirtipur,lost,6 Dec 2024
+Chitwan,130/6,20.0,6.50,2,v Biratnagar,Kirtipur,lost,13 Dec 2024
+Karnali,128/8,20.0,6.40,1,v Lumbini,Kirtipur,won,13 Dec 2024
+Biratnagar,127,19.0,6.68,1,v Janakpur,Kirtipur,lost,30 Nov 2024
+Biratnagar,126/8,20.0,6.30,2,v Karnali,Kirtipur,lost,7 Dec 2024
+S Paschim,123/9,20.0,6.15,1,v Janakpur,Kirtipur,won,11 Dec 2024
+Lumbini,123/7,20.0,6.15,2,v Karnali,Kirtipur,lost,13 Dec 2024
+Kathmandu,120/9,18.1,6.60,2,v Biratnagar,Kirtipur,won,15 Dec 2024
+Janakpur,119/8,19.0,6.26,2,v Karnali,Kirtipur,won,19 Dec 2024
+Karnali,118/9,20.0,5.90,1,v Janakpur,Kirtipur,lost,19 Dec 2024
+Biratnagar,117,19.5,5.89,1,v Kathmandu,Kirtipur,lost,15 Dec 2024
+Chitwan,114/5,17.1,6.64,2,v Kathmandu,Kirtipur,won,2 Dec 2024
+Kathmandu,111/9,20.0,5.55,1,v Chitwan,Kirtipur,lost,2 Dec 2024
+Karnali,106/3,15.0,7.06,2,v Pokhara,Kirtipur,won,10 Dec 2024
+S Paschim,105/4,15.2,6.84,2,v Karnali,Kirtipur,won,16 Dec 2024
+Janakpur,104/5,15.5,6.56,2,v Kathmandu,Kirtipur,won,12 Dec 2024
+Pokhara,103,16.3,6.24,1,v Karnali,Kirtipur,lost,10 Dec 2024
+Kathmandu,103,19.2,5.32,1,v Lumbini,Kirtipur,won,11 Dec 2024
+Kathmandu,101,19.3,5.17,1,v Janakpur,Kirtipur,lost,12 Dec 2024
+Karnali,101,20.0,5.05,1,v S Paschim,Kirtipur,lost,16 Dec 2024
+Kathmandu,94,15.5,5.93,2,v S Paschim,Kirtipur,lost,5 Dec 2024
+Biratnagar,92,16.1,5.69,2,v S Paschim,Kirtipur,lost,3 Dec 2024
+Lumbini,85,19.2,4.39,2,v Kathmandu,Kirtipur,lost,11 Dec 2024
+Pokhara,74,13.2,5.55,2,v Chitwan,Kirtipur,lost,3 Dec 2024
+Janakpur,51,12.1,4.19,2,v S Paschim,Kirtipur,lost,11 Dec 2024

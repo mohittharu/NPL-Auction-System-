@@ -1,0 +1,101 @@
+player,runs_scored_in_an_inns,minutes_batted,balls_faced,boundary_fours,boundary_sixes,strike_rate,team,opposition,ground,match_date
+B Yadav,77,-,54,3,7,142.59,Lumbini,v S Paschim,Kirtipur,07 Dec 2024
+Kushal Malla,72,-,41,3,7,175.60,Chitwan,v Janakpur,Kirtipur,14 Dec 2024
+Lokesh Bam,71,-,47,3,6,151.06,Biratnagar,v Lumbini,Kirtipur,04 Dec 2024
+JDS Neesham,65,-,24,5,6,270.83,Janakpur,v Chitwan,Kirtipur,14 Dec 2024
+DS Airee,57,-,24,3,5,237.50,S Paschim,v Biratnagar,Kirtipur,03 Dec 2024
+S Dhawan,72,-,51,4,5,141.17,Karnali,v Kathmandu,Kirtipur,04 Dec 2024
+JDS Neesham,40,-,20,-,5,200.00,Janakpur,v Pokhara,Kirtipur,05 Dec 2024
+AGS Gous,104,-,55,12,5,189.09,Pokhara,v Lumbini,Kirtipur,06 Dec 2024
+SA Zaib,90,-,61,6,5,147.54,S Paschim,v Lumbini,Kirtipur,07 Dec 2024
+RK Paudel,80,-,57,6,5,140.35,Lumbini,v Chitwan,Kirtipur,10 Dec 2024
+JDS Neesham,45,-,17,2,5,264.70,Janakpur,v Karnali,Kirtipur,19 Dec 2024
+Kushal Malla,38,-,23,1,4,165.21,Chitwan,v Pokhara,Kirtipur,03 Dec 2024
+B McMullen,53,-,36,3,4,147.22,S Paschim,v Kathmandu,Kirtipur,05 Dec 2024
+RK Paudel,95,-,59,10,4,161.01,Lumbini,v Pokhara,Kirtipur,06 Dec 2024
+D Kharel,61,-,46,4,4,132.60,Pokhara,v Lumbini,Kirtipur,06 Dec 2024
+AK Sah,45,-,39,1,4,115.38,Janakpur,v Lumbini,Kirtipur,08 Dec 2024
+Gulsan Jha,49,-,37,3,4,132.43,Karnali,v Pokhara,Kirtipur,10 Dec 2024
+MJ Guptill,45,-,35,1,4,128.57,Biratnagar,v Chitwan,Kirtipur,13 Dec 2024
+Basir Ahamad,68,-,44,4,4,154.54,Biratnagar,v Chitwan,Kirtipur,13 Dec 2024
+RS Bopara,53,-,34,3,4,155.88,Chitwan,v Karnali,Kirtipur,18 Dec 2024
+BKEL Milantha,87,-,49,9,4,177.55,Janakpur,v S Paschim,Kirtipur,21 Dec 2024
+BKEL Milantha,75,-,53,9,3,141.50,Janakpur,v Biratnagar,Kirtipur,30 Nov 2024
+AK Sah,62,-,42,6,3,147.61,Janakpur,v Karnali,Kirtipur,02 Dec 2024
+Gulsan Jha,36,-,27,1,3,133.33,Karnali,v Janakpur,Kirtipur,02 Dec 2024
+RS Bopara,51,-,38,3,3,134.21,Chitwan,v Pokhara,Kirtipur,03 Dec 2024
+TJ Moores,30,-,17,1,3,176.47,Lumbini,v Biratnagar,Kirtipur,04 Dec 2024
+B Yadav,19,-,7,-,3,271.42,Lumbini,v Biratnagar,Kirtipur,04 Dec 2024
+MA Leask,25,-,13,-,3,192.30,Pokhara,v Janakpur,Kirtipur,05 Dec 2024
+CAK Walton,30,-,19,-,3,157.89,Karnali,v Chitwan,Kirtipur,06 Dec 2024
+WG Bosisto,66,-,49,5,3,134.69,Karnali,v Biratnagar,Kirtipur,07 Dec 2024
+Hassan Eisakhil,65,-,52,6,3,125.00,Chitwan,v S Paschim,Kirtipur,08 Dec 2024
+JDS Neesham,27,-,17,1,3,158.82,Janakpur,v Kathmandu,Kirtipur,12 Dec 2024
+WG Bosisto,44,-,30,3,3,146.66,Karnali,v Lumbini,Kirtipur,13 Dec 2024
+RP Magar,33,-,20,1,3,165.00,Biratnagar,v Chitwan,Kirtipur,13 Dec 2024
+RA Reifer,41,-,30,1,3,136.66,Pokhara,v Kathmandu,Kirtipur,14 Dec 2024
+MG Erasmus,25,-,10,1,3,250.00,Kathmandu,v Pokhara,Kirtipur,14 Dec 2024
+CAK Walton,46,-,23,4,3,200.00,Karnali,v Chitwan,Kirtipur,18 Dec 2024
+JDS Neesham,45,-,23,3,3,195.65,Janakpur,v S Paschim,Kirtipur,18 Dec 2024
+B Bhandari,58,-,55,3,3,105.45,S Paschim,v Janakpur,Kirtipur,18 Dec 2024
+B Bhandari,41,-,31,1,3,132.25,S Paschim,v Janakpur,Kirtipur,21 Dec 2024
+LM Benkenstein,22,-,17,1,2,129.41,Chitwan,v Kathmandu,Kirtipur,02 Dec 2024
+BKEL Milantha,24,-,13,2,2,184.61,Janakpur,v Karnali,Kirtipur,02 Dec 2024
+Aasif Sheikh,36,-,29,2,2,124.13,Janakpur,v Karnali,Kirtipur,02 Dec 2024
+A Gharti,33,-,22,2,2,150.00,Karnali,v Janakpur,Kirtipur,02 Dec 2024
+B McMullen,36,-,26,2,2,138.46,S Paschim,v Biratnagar,Kirtipur,03 Dec 2024
+N Joshi,30,-,24,3,2,125.00,Pokhara,v Chitwan,Kirtipur,03 Dec 2024
+LM Benkenstein,16,-,13,1,2,123.07,Chitwan,v Pokhara,Kirtipur,03 Dec 2024
+MG Erasmus,38,-,28,3,2,135.71,Kathmandu,v Karnali,Kirtipur,04 Dec 2024
+Karan KC,28,-,10,2,2,280.00,Kathmandu,v Karnali,Kirtipur,04 Dec 2024
+RK Paudel,46,-,29,4,2,158.62,Lumbini,v Biratnagar,Kirtipur,04 Dec 2024
+B Bhandari,35,-,28,2,2,125.00,S Paschim,v Kathmandu,Kirtipur,05 Dec 2024
+DS Airee,43,-,25,3,2,172.00,S Paschim,v Kathmandu,Kirtipur,05 Dec 2024
+TJ Moores,45,-,38,2,2,118.42,Lumbini,v Pokhara,Kirtipur,06 Dec 2024
+DS Airee,39,-,19,4,2,205.26,S Paschim,v Lumbini,Kirtipur,07 Dec 2024
+Lokesh Bam,19,-,9,1,2,211.11,Biratnagar,v Karnali,Kirtipur,07 Dec 2024
+D Khanal,53,-,48,4,2,110.41,Karnali,v Biratnagar,Kirtipur,07 Dec 2024
+S Kansakar,22,-,24,-,2,91.66,Janakpur,v Lumbini,Kirtipur,08 Dec 2024
+RS Bopara,36,-,18,2,2,200.00,Chitwan,v S Paschim,Kirtipur,08 Dec 2024
+SA Zaib,21,-,21,-,2,100.00,S Paschim,v Janakpur,Kirtipur,11 Dec 2024
+DA Douthwaite,21,-,24,-,2,87.50,Kathmandu,v Lumbini,Kirtipur,11 Dec 2024
+P Shrestha,20,-,14,-,2,142.85,Kathmandu,v Lumbini,Kirtipur,11 Dec 2024
+RA Reifer,34,-,23,3,2,147.82,Pokhara,v Biratnagar,Kirtipur,12 Dec 2024
+Lokesh Bam,26,-,16,2,2,162.50,Biratnagar,v Pokhara,Kirtipur,12 Dec 2024
+S Jora,24,-,21,-,2,114.28,Lumbini,v Karnali,Kirtipur,13 Dec 2024
+AS Routela,42,-,29,3,2,144.82,Chitwan,v Biratnagar,Kirtipur,13 Dec 2024
+D Nath,27,-,24,-,2,112.50,Pokhara,v Kathmandu,Kirtipur,14 Dec 2024
+P Shrestha,39,-,34,2,2,114.70,Kathmandu,v Biratnagar,Kirtipur,15 Dec 2024
+RA Reifer,33,-,28,2,2,117.85,Pokhara,v S Paschim,Kirtipur,15 Dec 2024
+AGS Gous,36,-,21,4,2,171.42,Pokhara,v S Paschim,Kirtipur,15 Dec 2024
+B McMullen,23,-,16,1,2,143.75,S Paschim,v Pokhara,Kirtipur,15 Dec 2024
+JA Kolsawala,53,-,39,6,2,135.89,Karnali,v Chitwan,Kirtipur,18 Dec 2024
+WG Bosisto,52,-,39,3,2,133.33,Karnali,v Chitwan,Kirtipur,18 Dec 2024
+SA Zaib,32,-,21,3,2,152.38,S Paschim,v Janakpur,Kirtipur,18 Dec 2024
+Gulsan Jha,25,-,20,1,2,125.00,Karnali,v Janakpur,Kirtipur,19 Dec 2024
+SA Zaib,69,-,43,8,2,160.46,S Paschim,v Janakpur,Kirtipur,21 Dec 2024
+H Thaker,30,-,24,-,2,125.00,Janakpur,v S Paschim,Kirtipur,21 Dec 2024
+Aasif Sheikh,33,-,19,4,2,173.68,Janakpur,v S Paschim,Kirtipur,21 Dec 2024
+MJ Guptill,55,-,43,7,1,127.90,Biratnagar,v Janakpur,Kirtipur,30 Nov 2024
+S Lamichhane,7,-,4,-,1,175.00,Biratnagar,v Janakpur,Kirtipur,30 Nov 2024
+S Rana,16,-,17,1,1,94.11,Kathmandu,v Chitwan,Kirtipur,02 Dec 2024
+M Levitt,25,-,16,4,1,156.25,Kathmandu,v Chitwan,Kirtipur,02 Dec 2024
+S Karki,28,-,31,2,1,90.32,Chitwan,v Kathmandu,Kirtipur,02 Dec 2024
+Hassan Eisakhil,12,-,7,1,1,171.42,Chitwan,v Kathmandu,Kirtipur,02 Dec 2024
+Deepak Bohara,7,-,7,-,1,100.00,Chitwan,v Kathmandu,Kirtipur,02 Dec 2024
+JDS Neesham,16,-,8,2,1,200.00,Janakpur,v Karnali,Kirtipur,02 Dec 2024
+Sompal Kami,29,-,13,3,1,223.07,Karnali,v Janakpur,Kirtipur,02 Dec 2024
+RP Magar,15,-,15,-,1,100.00,Biratnagar,v S Paschim,Kirtipur,03 Dec 2024
+SA Zaib,14,-,15,-,1,93.33,S Paschim,v Biratnagar,Kirtipur,03 Dec 2024
+CB Sole,9,-,7,-,1,128.57,Biratnagar,v S Paschim,Kirtipur,03 Dec 2024
+I Pandey,21,-,16,2,1,131.25,S Paschim,v Biratnagar,Kirtipur,03 Dec 2024
+AS Routela,13,-,6,-,1,216.66,Chitwan,v Pokhara,Kirtipur,03 Dec 2024
+Bipin Khatri,9,-,8,-,1,112.50,Pokhara,v Chitwan,Kirtipur,03 Dec 2024
+Hassan Eisakhil,14,-,10,1,1,140.00,Chitwan,v Pokhara,Kirtipur,03 Dec 2024
+Babar Hayat,13,-,18,-,1,72.22,Karnali,v Kathmandu,Kirtipur,04 Dec 2024
+M Levitt,22,-,19,2,1,115.78,Kathmandu,v Karnali,Kirtipur,04 Dec 2024
+S Maharjan,40,-,37,3,1,108.10,Kathmandu,v Karnali,Kirtipur,04 Dec 2024
+Saad Bin Zafar,15,-,13,-,1,115.38,Lumbini,v Biratnagar,Kirtipur,04 Dec 2024
+CB Sole,14,-,4,2,1,350.00,Biratnagar,v Lumbini,Kirtipur,04 Dec 2024
+A Ghiraiya,15,-,13,2,1,115.38,Lumbini,v Biratnagar,Kirtipur,04 Dec 2024
+Pratis GC,6,-,3,-,1,200.00,Biratnagar,v Lumbini,Kirtipur,04 Dec 2024
