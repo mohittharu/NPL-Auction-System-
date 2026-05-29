@@ -1,56 +1,65 @@
-# NPL-Auction-System🏏-
-- 
-Overview
-The NPL Auction System is a Machine Learning project that analyzes Nepal Premier League player statistics and predicts player auction prices.
-Purpose
+# 🏏 NPL Auction System
 
+A Machine Learning-based web application that predicts the **market value of cricket players** using their batting, bowling, fielding, and wicketkeeping statistics.
 
-Analyze player performance
+## 🚀 Features
 
+- 📊 Predict market value for existing players
+- 🆕 Simulate auction value for new players
+- 🏷️ Automatically classify players into categories
+- ⭐ Collect user ratings and feedback
+- 📈 Interactive dashboard built with Streamlit
 
-Predict auction value
+## 🛠️ Technologies Used
 
+- Python
+- Pandas
+- Scikit-Learn
+- Random Forest Regressor
+- Streamlit
+- Joblib
 
-Simulate NPL auction process
+## 📂 Project Structure
 
+```text
+NPL-Auction-System/
+│
+├── app.py
+├── data/
+│   └── npl_data.csv
+├── models/
+│   ├── random_forest_model.pkl
+│   ├── scaler.pkl
+│   └── feature_columns.pkl
+├── feedback.csv
+└── README.md
+```
 
-How It Works
-Player Data → Data Cleaning → ML Model → Price Prediction → Auction Simulation
-Tech Stack
+## ▶️ Run the Project
 
+Install dependencies:
 
-Python
+```bash
+pip install -r requirements.txt
+```
 
+Run the Streamlit application:
 
-Pandas
+```bash
+python -m streamlit run app.py
+```
 
+## 🎯 Project Goal
 
-NumPy
+To assist in player valuation and auction decision-making using Machine Learning and player performance statistics.
 
+## 👨‍💻 Author
 
-Matplotlib
+**Mohit Tharu**
 
+- GitHub: https://github.com/yourusername
+- LinkedIn: https://linkedin.com/in/yourprofile
 
-Seaborn
+---
 
-
-Scikit-learn
-
-
-Features
-
-
-Data Cleaning
-
-
-EDA
-
-
-Player Rating
-
-
-Auction Price Prediction
-
-
-Auction Simulation
-
+⭐ If you found this project useful, consider giving it a star!
