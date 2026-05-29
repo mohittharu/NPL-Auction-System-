@@ -57,8 +57,8 @@ To assist in player valuation and auction decision-making using Machine Learning
 
 **Mohit Tharu**
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
+- GitHub: https://github.com/mohittharu/NPL-Auction-System-
+- LinkedIn: https://www.linkedin.com/in/mohit-chaudhari-343940328/
 
 ---
 
