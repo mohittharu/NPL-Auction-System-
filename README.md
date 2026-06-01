@@ -1,3 +1,7 @@
+![alt text](data/image.png)
+
+
+
 # 🏏 NPL Auction System
 
 A Machine Learning-based web application that predicts the **market value of cricket players** using their batting, bowling, fielding, and wicketkeeping statistics.
