@@ -4,7 +4,7 @@ import joblib
 import os
 
 st.set_page_config(
-    page_title="NPL Auction System",
+    page_title="NPL Player Market Value Prediction System",
     page_icon="🏏",
     layout="wide"
 )
@@ -304,8 +304,8 @@ df["player_score"]   = df["batting_score"] + df["bowling_score"] + df["fielding_
 # ── Hero ──
 st.markdown("""
 <div class="hero">
-    <div class="eyebrow">🏏 &nbsp;NPL Auction System &nbsp;·&nbsp; Season 2025</div>
-    <h1>Player <span>Market Value</span><br>Intelligence</h1>
+    <div class="eyebrow">🏏 &nbsp;Season 2025 &nbsp;·&nbsp; AI Powered</div>
+    <h1>NPL Player <span>Market Value</span><br>Prediction System</h1>
     <p>AI-driven valuation and auction category classification powered by Random Forest machine learning.</p>
     <div class="hero-crest">🏆</div>
 </div>
