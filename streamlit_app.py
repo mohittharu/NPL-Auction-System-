@@ -288,9 +288,16 @@ input::placeholder, textarea::placeholder { color: var(--text-dim) !important; }
 
 # ── Load data ──
 try:
-    df = pd.read_csv("data/npl_data.csv")
-    rf = joblib.load(r"C:\Users\acer\OneDrive\Desktop\NPL-Auction-System-\notebooks\models\random_forest_model.pkl")
-    feature_columns = joblib.load(r"C:\Users\acer\OneDrive\Desktop\NPL-Auction-System-\notebooks\models\feature_columns.pkl")
+    import pandas as pd
+    from sqlalchemy import create_engine
+
+    engine = create_engine(
+    "mysql+pymysql://root:12345@localhost/npl_auction_system"
+    )
+
+    df = pd.read_sql("SELECT * FROM npl_data", engine)
+    rf = joblib.load("notebooks\models\random_forest_model.pkl")
+    feature_columns = joblib.load("models/feature_columns.pkl")
 except Exception as e:
     st.error(f"Error Loading Files: {e}")
     st.stop()
@@ -393,13 +400,22 @@ st.markdown("""
 rating  = st.slider("Rate this prediction", 1, 5, value=4)
 comment = st.text_area("Your feedback", placeholder="Share your thoughts on prediction accuracy…")
 
+from sqlalchemy import text
+
 if st.button("Submit Feedback", key="btn_feedback"):
-    feedback = pd.DataFrame({"rating": [rating], "stars": ["⭐" * rating], "comment": [comment]})
-    if os.path.exists("feedback.csv"):
-        feedback.to_csv("feedback.csv", mode="a", header=False, index=False)
-    else:
-        feedback.to_csv("feedback.csv", index=False)
-    st.success("✅ Feedback saved — thank you!")
+    with engine.begin() as conn:
+        conn.execute(
+            text("""
+                INSERT INTO feedback (rating, comment)
+                VALUES (:rating, :comment)
+            """),
+            {
+                "rating": rating,
+                "comment": comment
+            }
+        )
+
+    st.success("✅ Feedback saved successfully in MySQL!")
 
 # ── System Summary ──
 st.markdown("""
