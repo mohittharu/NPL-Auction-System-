@@ -3,11 +3,17 @@ import pandas as pd
 import joblib
 from pathlib import Path
 
+import streamlit as st
+
 st.set_page_config(
     page_title="NPL Auction Intelligence",
-    page_icon="🏏",
+    page_icon="images/NPL-logo.png",
     layout="wide",
 )
+
+st.image("images/NPL-logo.png", width=250)
+
+st.title("🏏 NPL Auction Intelligence")
 
 st.markdown(
     """
