@@ -1,24 +1,12 @@
-import streamlit as st
+﻿import streamlit as st
 import pandas as pd
 import joblib
 from pathlib import Path
 from database.connection import conn, cursor
-import base64
-
-BASE_DIR_INITIAL = Path(__file__).resolve().parent
-LOGO_PATH = BASE_DIR_INITIAL / "images" / "NPL-logo.png"
-
-def _get_image_base64(image_path: str) -> str:
-    """Convert image to base64 string for embedding."""
-    try:
-        with open(image_path, "rb") as img_file:
-            return base64.b64encode(img_file.read()).decode()
-    except Exception:
-        return ""
 
 st.set_page_config(
     page_title="NPL Auction System",
-    page_icon=str(LOGO_PATH),
+    page_icon="🏏",
     layout="wide",
 )
 st.markdown(
@@ -73,115 +61,68 @@ st.markdown(
     .brand-row {
         display: flex;
         align-items: center;
-        gap: 14px;
-        padding: 16px 14px;
-        margin: 0 8px 20px 8px;
-        background: linear-gradient(135deg, #FFFFFF 0%, #F7F8FA 100%);
-        border: 1.5px solid #E5E7EB;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
-    }
-    .brand-logo {
-        width: 56px;
-        height: 56px;
-        object-fit: contain;
-        flex-shrink: 0;
-        filter: drop-shadow(0 2px 4px rgba(200, 16, 46, 0.15));
+        gap: 10px;
+        padding: 8px 6px 16px;
+        margin-bottom: 6px;
     }
     .brand-mark {
-        width: 56px;
-        height: 56px;
-        border-radius: 14px;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
         background: linear-gradient(135deg, #D61A35, #A50F24);
         display: flex;
         align-items: center;
         justify-content: center;
         color: #fff;
-        font-size: 1.6rem;
-        box-shadow: 0 6px 16px rgba(200, 16, 46, 0.32);
+        font-size: 1.05rem;
+        box-shadow: 0 4px 12px rgba(200, 16, 46, 0.28);
         flex-shrink: 0;
     }
     .brand-name {
-        font-size: 1.35rem;
+        font-size: 1.15rem;
         font-weight: 800;
-        color: #C8102E !important;
+        color: var(--crimson) !important;
         letter-spacing: -0.02em;
-        line-height: 1.15;
-        margin: 0;
+        line-height: 1.2;
     }
     .brand-tag {
-        font-size: 0.85rem;
+        font-size: 0.72rem;
         color: var(--text-mid) !important;
         font-weight: 500;
-        margin: 3px 0 0 0;
     }
 
     /* Sidebar navigation */
     [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        padding: 12px 8px 0 8px;
-        width: calc(100% - 16px);
-        box-sizing: border-box;
-        margin: 0 auto;
+        gap: 2px;
+        padding: 2px 2px 0;
     }
     [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label {
-        background: linear-gradient(135deg, #FFFFFF 0%, #F7F8FA 100%) !important;
-        border: 1.5px solid #E5E7EB !important;
-        border-radius: 10px !important;
-        padding: 12px 14px !important;
-        margin: 0 !important;
-        width: 100% !important;
-        min-width: 0 !important;
-        transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 8px 10px 8px 12px !important;
+        margin: 0;
+        transition: all 0.16s ease;
         cursor: pointer;
-        font-weight: 600 !important;
-        font-size: 0.98rem !important;
-        color: #6B7280 !important;
-        display: flex !important;
-        align-items: center !important;
-        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
-        position: relative;
-    }
-    [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label::before {
-        content: '●';
-        display: inline-block;
-        width: 18px;
-        font-size: 10px;
-        margin-right: 12px;
-        color: #D1D5DB;
-        flex-shrink: 0;
-        transition: all 0.22s ease;
-    }
-    [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label > div {
-        width: 100% !important;
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
+        font-weight: 700 !important;
+        font-size: 0.93rem !important;
+        color: var(--text-mid) !important;
+        display: flex;
+        align-items: center;
+        box-shadow: none !important;
     }
     [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label:hover {
-        background: linear-gradient(135deg, #FFF9FA 0%, #FFF0F3 100%) !important;
-        border-color: #F5D6DB !important;
-        color: #C8102E !important;
-        box-shadow: 0 4px 12px rgba(200, 16, 46, 0.12) !important;
-        transform: translateY(-1px);
-    }
-    [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label:hover::before {
-        color: #F1CBD4;
-        transform: scale(1.2);
+        background: transparent !important;
+        color: var(--text) !important;
     }
     [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label[data-checked="true"],
     [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label:has(input:checked) {
-        background: linear-gradient(135deg, #C8102E 0%, #A50D26 100%) !important;
-        border-color: #C8102E !important;
-        color: #FFFFFF !important;
-        box-shadow: 0 6px 16px rgba(200, 16, 46, 0.28) !important;
-        font-weight: 700 !important;
-    }
-    [data-testid="stSidebar"] .stRadio > div[role="radiogroup"] label:has(input:checked)::before {
-        color: #FFFFFF !important;
-        font-size: 12px;
+        background: transparent !important;
+        color: var(--crimson) !important;
+        box-shadow: none !important;
+        font-weight: 800 !important;
     }
     [data-testid="stSidebar"] .stRadio div[role="radiogroup"] label > div:first-child {
         display: none !important;
@@ -189,32 +130,25 @@ st.markdown(
     [data-testid="stSidebar"] input[type="radio"] {
         display: none !important;
     }
-    .sidebar-note {
-        background: linear-gradient(135deg, #FBE9EC 0%, #FDF0F3 100%) !important;
-        border: 1.5px solid #F1CBD4 !important;
-        border-left: 4px solid #C8102E !important;
-        border-radius: 10px !important;
-        padding: 12px 14px !important;
-        color: #6B7280 !important;
-        font-size: 0.88rem;
-        line-height: 1.5;
-        margin: 16px 8px 0 8px !important;
-        font-weight: 500;
-        box-shadow: 0 2px 6px rgba(200, 16, 46, 0.08) !important;
-    }
     .sidebar-footer {
-        margin-top: 20px;
-        padding: 12px 14px;
-        margin-left: 8px;
-        margin-right: 8px;
-        background: linear-gradient(135deg, #FFFFFF 0%, #F7F8FA 100%) !important;
-        border: 1.5px solid #E5E7EB !important;
-        border-radius: 10px !important;
-        font-size: 0.82rem;
-        color: #6B7280 !important;
-        line-height: 1.5;
+        margin-top: 24px;
+        padding: 12px 8px 0;
+        border-top: 1px solid var(--border);
+        font-size: 0.78rem;
+        color: var(--text-mid) !important;
+        line-height: 1.45;
         font-weight: 600;
-        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
+    }
+    .sidebar-note {
+        background: transparent;
+        border: none;
+        border-left: 2px solid var(--border);
+        border-radius: 0;
+        padding: 0 0 0 12px;
+        color: var(--text-mid) !important;
+        font-size: 0.84rem;
+        line-height: 1.45;
+        margin-top: 8px;
     }
 
     /* Top bar */
@@ -562,70 +496,14 @@ st.markdown(
         font-weight: 700 !important;
         letter-spacing: 0.02em;
     }
-    /* Ensure input text and caret are visible across Streamlit versions */
-
-.stNumberInput input,
-.stTextArea textarea {
-    background: var(--surface) !important;
-    color: var(--text) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: 10px !important;
-    padding: 8px 10px !important;
-    box-shadow: none !important;
-}
-
-/* Dark select box */
-.stSelectbox div[data-baseweb="select"] {
-    background: #2B2D3A !important;
-    border: 1px solid #3F4354 !important;
-    border-radius: 10px !important;
-}
-
-/* Make ALL text inside the selectbox black */
-.stSelectbox div[data-baseweb="select"] * {
-    color: #000000 !important;
-    -webkit-text-fill-color: #000000 !important;
-}
-
-/* Selected value */
-.stSelectbox div[data-baseweb="select"] div {
-    color: #FFFFFF !important;
-}
-
-/* Input text */
-.stSelectbox input {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-
-/* Dropdown arrow */
-.stSelectbox svg {
-    fill: #FFFFFF !important;
-}
-
-.stSelectbox div[data-baseweb="select"] span {
-    color: #111827 !important;
-}
-
-/* Text input fields should render black text on light gray background */
-.stTextInput input {
-    color: #000000 !important;
-    -webkit-text-fill-color: #000000 !important;
-    caret-color: #000000 !important;
-}
-    /* Force the selectbox displayed value to be visible (addresses Streamlit DOM variations) */
-    .stSelectbox [role="combobox"] *, .stSelectbox [role="button"] *, .stSelectbox div[data-baseweb="select"] * {
+    .stTextInput input, .stNumberInput input, .stTextArea textarea,
+    .stSelectbox div[data-baseweb="select"] > div {
+        background: var(--surface) !important;
         color: var(--text) !important;
-        background: transparent !important;
-        caret-color: var(--text) !important;
-    }
-    .stTextInput input::placeholder, .stTextArea textarea::placeholder, .stSelectbox [role="button"]::placeholder {
-        color: var(--text-dim) !important;
-        opacity: 1 !important;
-    }
-    /* Use a very light gray background for text-like fields only */
-    .stTextInput input, .stTextArea textarea, .stSelectbox [role="combobox"], .stSelectbox div[data-baseweb="select"] > div {
-        background: #F3F4F8 !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 10px !important;
+        padding: 8px 10px !important;
+        box-shadow: none !important;
     }
     .stNumberInput div[data-testid="stNumberInputStepContainer"] {
         gap: 4px !important;
@@ -797,7 +675,7 @@ def get_market_category(value: float) -> str:
 
 
 def format_currency(value: float) -> str:
-    return f"NPR {value:,.0f}"
+    return f"₹ {value:,.0f}"
 
 
 def score_to_rating(score: float, max_score: float) -> float:
@@ -967,10 +845,13 @@ def render_player_card(name: str, rating: float, role: str, role_class: str, sta
     )
 
 
+if "page" not in st.session_state:
+    st.session_state.page = "Data Overview"
+
 st.sidebar.markdown(
-    f"""
+    """
     <div class="brand-row">
-        <img src="data:image/png;base64,{_get_image_base64(str(LOGO_PATH))}" class="brand-logo" alt="NPL Logo"/>
+        <div class="brand-mark">🏏</div>
         <div>
             <div class="brand-name">NPL Auction</div>
             <div class="brand-tag">Intelligence Hub</div>
@@ -983,6 +864,8 @@ st.sidebar.markdown(
 page = st.sidebar.radio(
     "Navigation",
     ["Data Overview", "ML Predictions", "Player Comparison", "Market Insights"],
+    index=0,
+    key="page",
 )
 
 st.sidebar.divider()
@@ -1113,7 +996,7 @@ elif page == "ML Predictions":
         """
         <div class="section-head">
             <div>
-                <div class="section-title"><span class="star">★</span> New Player Simulation - based on last year performance in any league </div>
+                <div class="section-title"><span class="star">★</span> New Player Simulation</div>
                 <p class="section-subtitle">Enter stats, then submit the form — empty stats will not produce a valuation</p>
             </div>
         </div>
@@ -1180,7 +1063,7 @@ elif page == "ML Predictions":
                         predicted_market_value,
                         predicted_category
                     )
-                    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?)
                     """,
                     (
                         player_name,
@@ -1243,7 +1126,7 @@ elif page == "ML Predictions":
             cursor.execute(
                 """
                 INSERT INTO feedback (rating, comment)
-                VALUES (%s, %s)
+                VALUES (?, ?)
                 """,
                 (rating, comment)
             )
